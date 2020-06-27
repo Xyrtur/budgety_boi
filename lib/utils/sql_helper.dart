@@ -23,7 +23,7 @@ class SQLHelper {
   Future<Database> initializeDatabase() async {
     // Get the directory path for both Android and iOS to store database.
     Directory directory = await getApplicationDocumentsDirectory();
-    String path = directory.path + 'budgets.db';
+    String path = directory.path + '/budgets.db';
 
     // Open/create the database at a given path
     var todosDatabase = await openDatabase(path, version: 1, onCreate: _createDb);

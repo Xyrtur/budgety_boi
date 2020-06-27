@@ -13,7 +13,11 @@ class SetBudgetScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Budget Settings", style: Theme.of(context).textTheme.headline),
+        title: Text("Budget Settings",
+            style: Theme.of(context)
+                .textTheme
+                .headline
+                .copyWith(fontSize: SizeConfig.safeBlockVertical * 3.5473)),
       ),
       body: Form(
         key: _formKey,
@@ -112,7 +116,7 @@ class SetBudgetScreen extends StatelessWidget {
               child: Card(
                 color: Theme.of(context).accentColor,
                 child: Center(
-                  child: Text("Submit", style: Theme.of(context).textTheme.body1),
+                  child: Text("Submit", style: bodyStyleWhiteColor(context)),
                 ),
               ),
             ),

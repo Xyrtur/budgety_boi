@@ -60,7 +60,7 @@ class _MonthlyTabState extends State<MonthlyTabWidget> {
                       date = (dateJiffy..subtract(months: 1)).yMMMM;
                     });
                   }),
-              Text(date, style: Theme.of(context).textTheme.body1),
+              Text(date, style: bodyStyleWhiteColor(context)),
               IconButton(
                 icon: Icon(Icons.chevron_right, color: Colors.white),
                 onPressed: () {

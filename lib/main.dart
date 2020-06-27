@@ -13,8 +13,14 @@ class BudgetApp extends StatelessWidget {
           accentColor: Color(0xFFD0413C),
           textTheme: TextTheme(
             headline: TextStyle(
-                fontFamily: 'PT Sans', fontWeight: FontWeight.bold, color: Color(0xFF002B36), fontSize: 30),
-            body1: TextStyle(fontFamily: 'PT Sans', color: Colors.white, fontSize: 20),
+              fontFamily: 'PT Sans',
+              fontWeight: FontWeight.bold,
+              color: Color(0xFF002B36),
+            ),
+            body1: TextStyle(
+              fontFamily: 'PT Sans',
+              color: Colors.white,
+            ),
           ),
         ),
         home: SafeArea(child: ReportScreen()));

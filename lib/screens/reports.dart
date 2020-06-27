@@ -29,6 +29,7 @@ class _ReportScreenState extends State<ReportScreen> with SingleTickerProviderSt
   }
 
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -40,7 +41,10 @@ class _ReportScreenState extends State<ReportScreen> with SingleTickerProviderSt
           backgroundColor: Theme.of(context).primaryColor,
           title: Text(
             'Reports',
-            style: Theme.of(context).textTheme.headline,
+            style: Theme.of(context)
+                .textTheme
+                .headline
+                .copyWith(fontSize: SizeConfig.safeBlockVertical * 3.5473),
           ),
           bottom: PreferredSize(
             preferredSize: Size.fromHeight(80),

@@ -33,7 +33,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
           backgroundColor: Theme.of(context).primaryColor,
           title: Text(
             'Settings',
-            style: Theme.of(context).textTheme.headline,
+            style: Theme.of(context)
+                .textTheme
+                .headline
+                .copyWith(fontSize: SizeConfig.safeBlockVertical * 3.5473),
           ),
         ),
         drawer: hamborgerTime(context),
@@ -45,7 +48,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               leading: Icon(iconList[index], color: Colors.grey[500]),
               title: Text(
                 entries[index],
-                style: Theme.of(context).textTheme.body1,
+                style: bodyStyleWhiteColor(context),
               ),
               onTap: () {
                 Navigator.push(

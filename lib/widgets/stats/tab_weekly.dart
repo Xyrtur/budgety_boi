@@ -73,7 +73,7 @@ class _WeeklyTabState extends State<WeeklyTabWidget> {
                     endDex = (startDex != 0) ? endDex - 1 : 1;
                   });
                 }),
-            Text(date, style: Theme.of(context).textTheme.body1),
+            Text(date, style: bodyStyleWhiteColor(context)),
             IconButton(
               icon: Icon(Icons.chevron_right, color: Colors.white),
               onPressed: () {
@@ -91,9 +91,9 @@ class _WeeklyTabState extends State<WeeklyTabWidget> {
         ),
         Row(
           children: <Widget>[
-            Text("Total", style: Theme.of(context).textTheme.body1),
+            Text("Total", style: bodyStyleWhiteColor(context)),
             SizedBox(width: SizeConfig.safeBlockHorizontal * 30),
-            Text("Food", style: Theme.of(context).textTheme.body1),
+            Text("Food", style: bodyStyleWhiteColor(context)),
           ],
         ),
         Row(
@@ -143,9 +143,9 @@ class _WeeklyTabState extends State<WeeklyTabWidget> {
         ),
         Row(
           children: <Widget>[
-            Text("Toiletries", style: Theme.of(context).textTheme.body1),
+            Text("Toiletries", style: bodyStyleWhiteColor(context)),
             SizedBox(width: SizeConfig.safeBlockHorizontal * 30),
-            Text("Hobby", style: Theme.of(context).textTheme.body1),
+            Text("Hobby", style: bodyStyleWhiteColor(context)),
           ],
         ),
         Row(
@@ -188,7 +188,7 @@ class _WeeklyTabState extends State<WeeklyTabWidget> {
           width: double.infinity,
           height: SizeConfig.blockSizeVertical * 7,
         ),
-        Center(child: Text("Txn History", style: Theme.of(context).textTheme.body1)),
+        Center(child: Text("Txn History", style: bodyStyleWhiteColor(context))),
         txnHistory(
             context,
             "paid_on BETWEEN \'${getDates()[endDex - 1].format("yyy-MM-dd")}\' AND \'${getDates()[endDex].format("yyy-MM-dd")}\'",

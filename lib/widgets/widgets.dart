@@ -16,6 +16,10 @@ List<Jiffy> getDates() {
   ];
 }
 
+TextStyle bodyStyleWhiteColor(BuildContext context) {
+  return Theme.of(context).textTheme.body1.copyWith(fontSize: SizeConfig.safeBlockVertical * 2.3649);
+}
+
 List<String> getGroups() {
   return ["Food", "Toiletries", "Hobbies", "Rent", "Phone", "Electricity", "Internet", "Laundry"];
 }
@@ -55,12 +59,16 @@ Drawer hamborgerTime(BuildContext context) {
     child: ListView(
       children: <Widget>[
         DrawerHeader(
-            child: Text("PETTHESCHNÖZER", style: Theme.of(context).textTheme.headline),
+            child: Text("PETTHESCHNÖZER",
+                style: Theme.of(context)
+                    .textTheme
+                    .headline
+                    .copyWith(fontSize: SizeConfig.safeBlockVertical * 3.5473)),
             decoration: BoxDecoration(
                 color: Theme.of(context).primaryColor,
                 image: DecorationImage(image: AssetImage("assets/schnozer.gif"), fit: BoxFit.cover))),
         ListTile(
-          title: Text("Reports", style: Theme.of(context).textTheme.body1),
+          title: Text("Reports", style: bodyStyleWhiteColor(context)),
           leading: Icon(
             Icons.assessment,
             color: Theme.of(context).primaryColor,
@@ -71,7 +79,7 @@ Drawer hamborgerTime(BuildContext context) {
           },
         ),
         ListTile(
-          title: Text("Inputs", style: Theme.of(context).textTheme.body1),
+          title: Text("Inputs", style: bodyStyleWhiteColor(context)),
           leading: Icon(Icons.compare_arrows, color: Theme.of(context).primaryColor),
           onTap: () {
             Navigator.of(context).pop();
@@ -79,7 +87,7 @@ Drawer hamborgerTime(BuildContext context) {
           },
         ),
         ListTile(
-          title: Text("Settings", style: Theme.of(context).textTheme.body1),
+          title: Text("Settings", style: bodyStyleWhiteColor(context)),
           leading: Icon(Icons.settings, color: Theme.of(context).primaryColor),
           onTap: () {
             Navigator.of(context).pop();
@@ -107,14 +115,14 @@ class IncomeList extends StatelessWidget {
           child: Text(
             incomes[index].name,
             textAlign: TextAlign.left,
-            style: Theme.of(context).textTheme.body1,
+            style: bodyStyleWhiteColor(context),
           ),
         ),
         Expanded(
           child: Text(
             '\$${incomes[index].amount}',
             textAlign: TextAlign.right,
-            style: Theme.of(context).textTheme.body1,
+            style: bodyStyleWhiteColor(context),
           ),
         ),
       ],
@@ -148,14 +156,14 @@ class ExpenseList extends StatelessWidget {
           child: Text(
             expenses[index].name,
             textAlign: TextAlign.left,
-            style: Theme.of(context).textTheme.body1,
+            style: bodyStyleWhiteColor(context),
           ),
         ),
         Expanded(
           child: Text(
             '\$${expenses[index].amount}',
             textAlign: TextAlign.right,
-            style: Theme.of(context).textTheme.body1,
+            style: bodyStyleWhiteColor(context),
           ),
         ),
       ],
@@ -213,8 +221,10 @@ SleekCircularSlider BudgetProgressBar(BuildContext context, String limit, double
             modifier: (double value) {
               return '\$${initialValue.toStringAsFixed(2)}';
             },
-            mainLabelStyle: Theme.of(context).textTheme.body1.copyWith(fontSize: 25),
-            bottomLabelStyle: Theme.of(context).textTheme.body1.copyWith(fontSize: 15),
+            mainLabelStyle:
+                Theme.of(context).textTheme.body1.copyWith(fontSize: SizeConfig.safeBlockVertical * 2.9561),
+            bottomLabelStyle:
+                Theme.of(context).textTheme.body1.copyWith(fontSize: SizeConfig.safeBlockVertical * 1.7736),
             bottomLabelText: "/ \$$limit")),
     max: double.parse(limit),
     min: (double.parse(limit) < 0) ? double.parse(limit) - 1 : 0,
@@ -232,7 +242,7 @@ Card setBudgetCard({BuildContext context, Icon sign, String type, Function f}) {
         Padding(
             padding: EdgeInsets.symmetric(vertical: 8),
             child: Text(type,
-                style: Theme.of(context).textTheme.body1.copyWith(color: Theme.of(context).canvasColor))),
+                style: bodyStyleWhiteColor(context).copyWith(color: Theme.of(context).canvasColor))),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: TextFormField(
@@ -267,7 +277,7 @@ Expanded graphCard({BuildContext context, String type, Widget typeSlider}) {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.fromLTRB(8, 8, 0, 0),
-                child: Text(type, style: Theme.of(context).textTheme.body1, textAlign: TextAlign.left),
+                child: Text(type, style: bodyStyleWhiteColor(context), textAlign: TextAlign.left),
               ),
               Padding(padding: EdgeInsets.all(10), child: typeSlider)
             ],
@@ -288,7 +298,7 @@ Theme txnHistory(BuildContext context, String paid_on_condition, String group, S
     child: ExpansionTile(
       title: Text(
         subtitle,
-        style: Theme.of(context).textTheme.body1.copyWith(fontSize: 15),
+        style: Theme.of(context).textTheme.body1.copyWith(fontSize: SizeConfig.safeBlockVertical * 1.7736),
       ),
       subtitle: Divider(
         height: 10,
@@ -341,7 +351,7 @@ Theme txnHistory(BuildContext context, String paid_on_condition, String group, S
                                       style: Theme.of(context)
                                           .textTheme
                                           .body1
-                                          .copyWith(color: Colors.white, fontSize: 15),
+                                          .copyWith(fontSize: SizeConfig.safeBlockVertical * 1.7736),
                                     ),
                                     (group == "NOT IN (\"food\", \"hobby\")")
                                         ? Text(
@@ -349,7 +359,7 @@ Theme txnHistory(BuildContext context, String paid_on_condition, String group, S
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .body1
-                                                .copyWith(color: Colors.white, fontSize: 15),
+                                                .copyWith(fontSize: SizeConfig.safeBlockVertical * 1.7736),
                                           )
                                         : Container(width: 0, height: 0),
                                     Text(
@@ -357,7 +367,7 @@ Theme txnHistory(BuildContext context, String paid_on_condition, String group, S
                                       style: Theme.of(context)
                                           .textTheme
                                           .body1
-                                          .copyWith(color: Colors.white, fontSize: 15),
+                                          .copyWith(fontSize: SizeConfig.safeBlockVertical * 1.7736),
                                     ),
                                   ],
                                 ),
@@ -390,13 +400,13 @@ Center otherExpenseCard(BuildContext context, int group, Jiffy date) {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(getGroups()[group], style: Theme.of(context).textTheme.body1),
+            Text(getGroups()[group], style: bodyStyleWhiteColor(context)),
             FutureBuilder(
                 future: _getValue(date, getActualGroups()[group]),
                 builder: (context, AsyncSnapshot<List<String>> snapshot) {
                   if (snapshot.hasData) {
                     return Text("\$${snapshot.data[0]} \\ \$${snapshot.data[1]} ",
-                        style: Theme.of(context).textTheme.body1);
+                        style: bodyStyleWhiteColor(context));
                   } else {
                     return CircularProgressIndicator();
                   }

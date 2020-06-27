@@ -57,6 +57,18 @@ class _InputScreenState extends State<InputScreen> {
     accentColor = Theme.of(context).accentColor;
     String date = Jiffy().format("dd/MM/yyy");
     _date = Jiffy().format("yyyy-MM-dd");
+
+    TextStyle bodyStyleCanvasColor = Theme.of(context)
+        .textTheme
+        .body1
+        .copyWith(color: canvasColor, fontSize: SizeConfig.safeBlockVertical * 2.3649);
+
+    TextStyle bodyStyleWhiteColor =
+        Theme.of(context).textTheme.body1.copyWith(fontSize: SizeConfig.safeBlockVertical * 2.3649);
+
+    TextStyle headlineStyle =
+        Theme.of(context).textTheme.headline.copyWith(fontSize: SizeConfig.safeBlockVertical * 3.5473);
+
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -75,7 +87,7 @@ class _InputScreenState extends State<InputScreen> {
           backgroundColor: Theme.of(context).primaryColor,
           title: Text(
             'Inputs',
-            style: Theme.of(context).textTheme.headline,
+            style: headlineStyle,
           ),
         ),
         drawer: hamborgerTime(context),
@@ -112,8 +124,7 @@ class _InputScreenState extends State<InputScreen> {
                                         context: context,
                                         builder: (BuildContext context) {
                                           return AlertDialog(
-                                            title: Text("New Income",
-                                                style: Theme.of(context).textTheme.headline),
+                                            title: Text("New Income", style: headlineStyle),
                                             contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             shape: RoundedRectangleBorder(
                                                 borderRadius: BorderRadius.all(Radius.circular(32.0))),
@@ -137,21 +148,15 @@ class _InputScreenState extends State<InputScreen> {
                                                               Padding(
                                                                 padding:
                                                                     const EdgeInsets.fromLTRB(0, 0, 8, 0),
-                                                                child: Text("Name",
-                                                                    style: Theme.of(context)
-                                                                        .textTheme
-                                                                        .body1
-                                                                        .copyWith(color: canvasColor)),
+                                                                child:
+                                                                    Text("Name", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
                                                                   height: 80,
                                                                   child: Center(
                                                                     child: TextFormField(
-                                                                      style: Theme.of(context)
-                                                                          .textTheme
-                                                                          .body1
-                                                                          .copyWith(color: canvasColor),
+                                                                      style: bodyStyleCanvasColor,
                                                                       keyboardType: TextInputType.text,
                                                                       decoration: InputDecoration(
                                                                           isDense: true,
@@ -195,8 +200,7 @@ class _InputScreenState extends State<InputScreen> {
                                                                     color: accentColor,
                                                                     child: Text(
                                                                       date,
-                                                                      style:
-                                                                          Theme.of(context).textTheme.body1,
+                                                                      style: bodyStyleWhiteColor,
                                                                     ),
                                                                     onPressed: () async {
                                                                       var datePicked = await DatePicker
@@ -222,21 +226,15 @@ class _InputScreenState extends State<InputScreen> {
                                                               Padding(
                                                                 padding:
                                                                     const EdgeInsets.fromLTRB(20, 0, 8, 0),
-                                                                child: Text("Amt.",
-                                                                    style: Theme.of(context)
-                                                                        .textTheme
-                                                                        .body1
-                                                                        .copyWith(color: canvasColor)),
+                                                                child:
+                                                                    Text("Amt.", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
                                                                   height: 80,
                                                                   child: Center(
                                                                     child: TextFormField(
-                                                                      style: Theme.of(context)
-                                                                          .textTheme
-                                                                          .body1
-                                                                          .copyWith(color: canvasColor),
+                                                                      style: bodyStyleCanvasColor,
                                                                       keyboardType:
                                                                           TextInputType.numberWithOptions(
                                                                               decimal: true),
@@ -287,7 +285,7 @@ class _InputScreenState extends State<InputScreen> {
                                                             ),
                                                             child: Text(
                                                               "Submit",
-                                                              style: Theme.of(context).textTheme.body1,
+                                                              style: bodyStyleWhiteColor,
                                                               textAlign: TextAlign.center,
                                                             ),
                                                           ),
@@ -340,8 +338,7 @@ class _InputScreenState extends State<InputScreen> {
                                         context: context,
                                         builder: (BuildContext context) {
                                           return AlertDialog(
-                                            title: Text("New Expense",
-                                                style: Theme.of(context).textTheme.headline),
+                                            title: Text("New Expense", style: headlineStyle),
                                             contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             shape: RoundedRectangleBorder(
                                                 borderRadius: BorderRadius.all(Radius.circular(32.0))),
@@ -365,21 +362,15 @@ class _InputScreenState extends State<InputScreen> {
                                                               Padding(
                                                                 padding:
                                                                     const EdgeInsets.fromLTRB(0, 0, 8, 0),
-                                                                child: Text("Name",
-                                                                    style: Theme.of(context)
-                                                                        .textTheme
-                                                                        .body1
-                                                                        .copyWith(color: canvasColor)),
+                                                                child:
+                                                                    Text("Name", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
                                                                   height: 80,
                                                                   child: Center(
                                                                     child: TextFormField(
-                                                                      style: Theme.of(context)
-                                                                          .textTheme
-                                                                          .body1
-                                                                          .copyWith(color: canvasColor),
+                                                                      style: bodyStyleCanvasColor,
                                                                       keyboardType: TextInputType.text,
                                                                       decoration: InputDecoration(
                                                                           isDense: true,
@@ -423,8 +414,7 @@ class _InputScreenState extends State<InputScreen> {
                                                                     color: accentColor,
                                                                     child: Text(
                                                                       date,
-                                                                      style:
-                                                                          Theme.of(context).textTheme.body1,
+                                                                      style: bodyStyleWhiteColor,
                                                                     ),
                                                                     onPressed: () async {
                                                                       var datePicked = await DatePicker
@@ -450,21 +440,15 @@ class _InputScreenState extends State<InputScreen> {
                                                               Padding(
                                                                 padding:
                                                                     const EdgeInsets.fromLTRB(20, 0, 8, 0),
-                                                                child: Text("Amt.",
-                                                                    style: Theme.of(context)
-                                                                        .textTheme
-                                                                        .body1
-                                                                        .copyWith(color: canvasColor)),
+                                                                child:
+                                                                    Text("Amt.", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
                                                                   height: 80,
                                                                   child: Center(
                                                                     child: TextFormField(
-                                                                      style: Theme.of(context)
-                                                                          .textTheme
-                                                                          .body1
-                                                                          .copyWith(color: canvasColor),
+                                                                      style: bodyStyleCanvasColor,
                                                                       keyboardType:
                                                                           TextInputType.numberWithOptions(
                                                                               decimal: true),
@@ -528,10 +512,7 @@ class _InputScreenState extends State<InputScreen> {
                                                                       ),
                                                                       Text(
                                                                         typeList[index],
-                                                                        style: Theme.of(context)
-                                                                            .textTheme
-                                                                            .body1
-                                                                            .copyWith(color: canvasColor),
+                                                                        style: bodyStyleCanvasColor,
                                                                       )
                                                                     ],
                                                                   ),
@@ -562,7 +543,7 @@ class _InputScreenState extends State<InputScreen> {
                                                             ),
                                                             child: Text(
                                                               "Submit",
-                                                              style: Theme.of(context).textTheme.body1,
+                                                              style: bodyStyleWhiteColor,
                                                               textAlign: TextAlign.center,
                                                             ),
                                                           ),
@@ -595,7 +576,7 @@ class _InputScreenState extends State<InputScreen> {
                     color: accentColor,
                     child: Text(
                       'Update',
-                      style: Theme.of(context).textTheme.body1,
+                      style: bodyStyleWhiteColor,
                     ),
                     onPressed: () {
                       _inputNewStuff(_inputs);

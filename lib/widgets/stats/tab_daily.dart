@@ -41,7 +41,6 @@ class _DailyTabState extends State<DailyTabWidget> {
     String _date = dayJiffy.format('EEE, MMM d');
     int currentDay = dayJiffy.date;
 
-    SizeConfig().init(context);
     return ListView(
       padding: EdgeInsets.symmetric(horizontal: SizeConfig.safeBlockHorizontal * 5),
 
@@ -61,7 +60,7 @@ class _DailyTabState extends State<DailyTabWidget> {
                     }
                   });
                 }),
-            Text(_date, style: Theme.of(context).textTheme.body1),
+            Text(_date, style: bodyStyleWhiteColor(context)),
             IconButton(
               icon: Icon(Icons.chevron_right, color: Colors.white),
               onPressed: () {
@@ -81,9 +80,9 @@ class _DailyTabState extends State<DailyTabWidget> {
         ),
         Row(
           children: <Widget>[
-            Text("Food", style: Theme.of(context).textTheme.body1),
+            Text("Food", style: bodyStyleWhiteColor(context)),
             SizedBox(width: SizeConfig.safeBlockHorizontal * 30),
-            Text("Hobby", style: Theme.of(context).textTheme.body1),
+            Text("Hobby", style: bodyStyleWhiteColor(context)),
           ],
         ),
         Row(
@@ -126,7 +125,7 @@ class _DailyTabState extends State<DailyTabWidget> {
           width: double.infinity,
           height: SizeConfig.blockSizeVertical * 7,
         ),
-        Center(child: Text("Txn History", style: Theme.of(context).textTheme.body1)),
+        Center(child: Text("Txn History", style: bodyStyleWhiteColor(context))),
         txnHistory(context, "paid_on = \'${dayJiffy.format("yyy-MM-dd")}\'", "= \"food\"", "Food"),
         txnHistory(context, "paid_on = \'${dayJiffy.format("yyy-MM-dd")}\'", "= \"hobby\"", "Hobby"),
         txnHistory(context, "paid_on = \'${dayJiffy.format("yyy-MM-dd")}\'", "NOT IN (\"food\", \"hobby\")",

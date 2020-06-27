@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a080d215-bc64-417b-b1aa-8f25334b782e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_28" />
+  <component name="FavoritesManager">
+    <favorites_list name="budget_app" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/budgety_boi" />
+  </component>
+  <component name="ProjectId" id="1ce6KOpI1WyOJVj1m5XYZxTOsja" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/app/src/main/res/drawable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Dart" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\app\src\main\res\drawable" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\app\src\main\res\mipmap-xxxhdpi" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\app\src\main\res\mipmap-xxhdpi" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\app\src\main\res\mipmap-xhdpi" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\app\src\main\res\mipmap-mdpi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\assets" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\assets\images" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\assets" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\android\app\src\main\res\mipmap-hdpi" />
+      <recent name="C:\Users\Kmiec\AndroidStudioProjects\budget_app\lib\widgets" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a080d215-bc64-417b-b1aa-8f25334b782e" name="Default Changelist" comment="" />
+      <created>1590876646560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590876646560</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="517" y="269" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1593137653537">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="517" y="269" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.864@0.0.1536.864" timestamp="1593137653537" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1591123240304">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1591123240304" />
+    <state x="618" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593218863749">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="618" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1593218863749" />
+    <state x="349" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1592810223114">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="349" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1592810223114" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1592288144934">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1592288144934" />
+    <state width="1491" height="253" key="GridCell.Tab.0.bottom" timestamp="1593218672133">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="253" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1593218672133" />
+    <state width="1491" height="253" key="GridCell.Tab.0.center" timestamp="1593218672133">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="253" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1593218672133" />
+    <state width="1491" height="253" key="GridCell.Tab.0.left" timestamp="1593218672133">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="253" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1593218672133" />
+    <state width="1491" height="253" key="GridCell.Tab.0.right" timestamp="1593218672133">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="253" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1593218672133" />
+    <state x="258" y="78" key="SettingsEditor" timestamp="1592004231900">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="258" y="78" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1592004231900" />
+    <state x="93" y="93" width="1350" height="678" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1591473660042">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.864@0.0.1536.864" timestamp="1591473660042" />
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592797260610">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1592797260610" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1593218920641">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1593218920641" />
+    <state x="156" y="137" width="1225" height="585" key="dock-window-1" timestamp="1591813102814">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="156" y="137" width="1225" height="585" key="dock-window-1/0.0.1536.864@0.0.1536.864" timestamp="1591813102814" />
+    <state x="463" y="164" width="609" height="536" key="find.popup" timestamp="1592733208007">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="463" y="164" width="609" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1592733208007" />
+    <state width="514" height="116" key="javadoc.popup.new" timestamp="1593167367308">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="514" height="116" key="javadoc.popup.new/0.0.1536.864@0.0.1536.864" timestamp="1593167367308" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1592817228604">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1592817228604" />
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1592616820160">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1592616820160" />
+  </component>
+</project>

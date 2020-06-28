@@ -184,8 +184,11 @@ class _InputScreenState extends State<InputScreen> {
                                                           ),
                                                         ),
                                                         Padding(
-                                                          padding:
-                                                              const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8),
+                                                          padding: EdgeInsets.fromLTRB(
+                                                              SizeConfig.safeBlockVertical * 1.8919,
+                                                              SizeConfig.safeBlockVertical * 0.9459,
+                                                              SizeConfig.safeBlockVertical * 1.8919,
+                                                              SizeConfig.safeBlockVertical * 0.9459),
                                                           child: Row(
                                                             children: <Widget>[
                                                               Padding(
@@ -224,14 +227,18 @@ class _InputScreenState extends State<InputScreen> {
                                                                 ),
                                                               ),
                                                               Padding(
-                                                                padding:
-                                                                    const EdgeInsets.fromLTRB(20, 0, 8, 0),
+                                                                padding: EdgeInsets.fromLTRB(
+                                                                    SizeConfig.safeBlockVertical * 2.3649,
+                                                                    0,
+                                                                    8,
+                                                                    0),
                                                                 child:
                                                                     Text("Amt.", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
-                                                                  height: 80,
+                                                                  height:
+                                                                      SizeConfig.safeBlockVertical * 9.4595,
                                                                   child: Center(
                                                                     child: TextFormField(
                                                                       style: bodyStyleCanvasColor,

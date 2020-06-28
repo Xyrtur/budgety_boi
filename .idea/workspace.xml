@@ -3,23 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a080d215-bc64-417b-b1aa-8f25334b782e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/inputs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/inputs.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/reports.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/reports.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/set_budget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/set_budget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/settings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/settings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/stats/tab_daily.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/stats/tab_daily.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/stats/tab_monthly.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/stats/tab_monthly.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/stats/tab_weekly.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/stats/tab_weekly.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/widgets.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="3238534850573098" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_28" />
   <component name="FavoritesManager">
     <favorites_list name="budget_app" />
   </component>
@@ -136,17 +128,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="463" y="164" width="609" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1592733208007" />
-    <state width="514" height="116" key="javadoc.popup.new" timestamp="1593285311844">
+    <state width="514" height="116" key="javadoc.popup.new" timestamp="1593368473926">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="514" height="116" key="javadoc.popup.new/0.0.1536.864@0.0.1536.864" timestamp="1593285311844" />
+    <state width="514" height="116" key="javadoc.popup.new/0.0.1536.864@0.0.1536.864" timestamp="1593368473926" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1592817228604">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1592817228604" />
-    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1592616820160">
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1593368289906">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1592616820160" />
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1593368289906" />
   </component>
 </project>

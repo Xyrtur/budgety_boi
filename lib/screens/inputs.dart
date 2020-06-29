@@ -25,6 +25,16 @@ class _InputScreenState extends State<InputScreen> {
   ];
   Color canvasColor, accentColor;
 
+  double px16 = SizeConfig.safeBlockVertical * 1.8919;
+  double px8 = SizeConfig.safeBlockVertical * 0.9459;
+  double px20 = SizeConfig.safeBlockVertical * 2.3649;
+  double px30 = SizeConfig.safeBlockVertical * 3.5473;
+  double px32 = SizeConfig.safeBlockVertical * 3.7839;
+  double px15 = SizeConfig.safeBlockVertical * 1.7736;
+  double px80 = SizeConfig.safeBlockVertical * 9.4595;
+  double px35 = SizeConfig.safeBlockVertical * 4.1385;
+  double px12 = SizeConfig.safeBlockVertical * 1.4189;
+
   int _selected;
   double _money;
   String _name;
@@ -58,16 +68,12 @@ class _InputScreenState extends State<InputScreen> {
     String date = Jiffy().format("dd/MM/yyy");
     _date = Jiffy().format("yyyy-MM-dd");
 
-    TextStyle bodyStyleCanvasColor = Theme.of(context)
-        .textTheme
-        .body1
-        .copyWith(color: canvasColor, fontSize: SizeConfig.safeBlockVertical * 2.3649);
+    TextStyle bodyStyleCanvasColor =
+        Theme.of(context).textTheme.body1.copyWith(color: canvasColor, fontSize: px20);
 
-    TextStyle bodyStyleWhiteColor =
-        Theme.of(context).textTheme.body1.copyWith(fontSize: SizeConfig.safeBlockVertical * 2.3649);
+    TextStyle bodyStyleWhiteColor = Theme.of(context).textTheme.body1.copyWith(fontSize: px20);
 
-    TextStyle headlineStyle =
-        Theme.of(context).textTheme.headline.copyWith(fontSize: SizeConfig.safeBlockVertical * 3.5473);
+    TextStyle headlineStyle = Theme.of(context).textTheme.headline.copyWith(fontSize: px30);
 
     return SafeArea(
       child: Scaffold(
@@ -92,7 +98,7 @@ class _InputScreenState extends State<InputScreen> {
         ),
         drawer: hamborgerTime(context),
         body: Padding(
-          padding: const EdgeInsets.all(12.0),
+          padding: EdgeInsets.all(px12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisSize: MainAxisSize.max,
@@ -104,12 +110,12 @@ class _InputScreenState extends State<InputScreen> {
                       child: Column(
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 12.0),
-                            child: Text('Incomes', style: TextStyle(fontSize: 20.0)),
+                            padding: EdgeInsets.only(bottom: px12),
+                            child: Text('Incomes', style: bodyStyleWhiteColor),
                           ),
                           IncomeList(_inputs),
                           Padding(
-                            padding: const EdgeInsets.only(top: 16),
+                            padding: EdgeInsets.only(top: px16),
                             child: Ink(
                               decoration: ShapeDecoration(
                                 color: accentColor,
@@ -127,7 +133,7 @@ class _InputScreenState extends State<InputScreen> {
                                             title: Text("New Income", style: headlineStyle),
                                             contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             shape: RoundedRectangleBorder(
-                                                borderRadius: BorderRadius.all(Radius.circular(32.0))),
+                                                borderRadius: BorderRadius.all(Radius.circular(px32))),
                                             content: StatefulBuilder(
                                               builder: (BuildContext bcontext, StateSetter setDialogState) {
                                                 return Container(
@@ -141,13 +147,11 @@ class _InputScreenState extends State<InputScreen> {
                                                       mainAxisSize: MainAxisSize.min,
                                                       children: <Widget>[
                                                         Padding(
-                                                          padding:
-                                                              const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8),
+                                                          padding: EdgeInsets.fromLTRB(px16, px16, px16, px8),
                                                           child: Row(
                                                             children: <Widget>[
                                                               Padding(
-                                                                padding:
-                                                                    const EdgeInsets.fromLTRB(0, 0, 8, 0),
+                                                                padding: EdgeInsets.fromLTRB(0, 0, px8, 0),
                                                                 child:
                                                                     Text("Name", style: bodyStyleCanvasColor),
                                                               ),
@@ -163,11 +167,11 @@ class _InputScreenState extends State<InputScreen> {
                                                                           focusedBorder: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0)),
+                                                                                      px16)),
                                                                           border: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0))),
+                                                                                      px16))),
                                                                       onSaved: (String value) {
                                                                         _name = value;
                                                                       },
@@ -184,22 +188,17 @@ class _InputScreenState extends State<InputScreen> {
                                                           ),
                                                         ),
                                                         Padding(
-                                                          padding: EdgeInsets.fromLTRB(
-                                                              SizeConfig.safeBlockVertical * 1.8919,
-                                                              SizeConfig.safeBlockVertical * 0.9459,
-                                                              SizeConfig.safeBlockVertical * 1.8919,
-                                                              SizeConfig.safeBlockVertical * 0.9459),
+                                                          padding: EdgeInsets.fromLTRB(px16, px8, px16, px8),
                                                           child: Row(
                                                             children: <Widget>[
                                                               Padding(
-                                                                padding:
-                                                                    const EdgeInsets.fromLTRB(0, 20, 0, 8),
+                                                                padding: EdgeInsets.fromLTRB(0, px20, 0, px8),
                                                                 child: Center(
                                                                   child: RaisedButton(
-                                                                    padding: EdgeInsets.all(8),
+                                                                    padding: EdgeInsets.all(px8),
                                                                     shape: RoundedRectangleBorder(
                                                                         borderRadius: BorderRadius.all(
-                                                                            Radius.circular(8.0))),
+                                                                            Radius.circular(px8))),
                                                                     color: accentColor,
                                                                     child: Text(
                                                                       date,
@@ -227,18 +226,13 @@ class _InputScreenState extends State<InputScreen> {
                                                                 ),
                                                               ),
                                                               Padding(
-                                                                padding: EdgeInsets.fromLTRB(
-                                                                    SizeConfig.safeBlockVertical * 2.3649,
-                                                                    0,
-                                                                    8,
-                                                                    0),
+                                                                padding: EdgeInsets.fromLTRB(px20, 0, px8, 0),
                                                                 child:
                                                                     Text("Amt.", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
-                                                                  height:
-                                                                      SizeConfig.safeBlockVertical * 9.4595,
+                                                                  height: px80,
                                                                   child: Center(
                                                                     child: TextFormField(
                                                                       style: bodyStyleCanvasColor,
@@ -250,11 +244,11 @@ class _InputScreenState extends State<InputScreen> {
                                                                           focusedBorder: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0)),
+                                                                                      px16)),
                                                                           border: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0))),
+                                                                                      px16))),
                                                                       onSaved: (String value) {
                                                                         _money = double.parse(value);
                                                                       },
@@ -283,12 +277,12 @@ class _InputScreenState extends State<InputScreen> {
                                                             }
                                                           },
                                                           child: Container(
-                                                            padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
+                                                            padding: EdgeInsets.only(top: px15, bottom: px15),
                                                             decoration: BoxDecoration(
                                                               color: accentColor,
                                                               borderRadius: BorderRadius.only(
-                                                                  bottomLeft: Radius.circular(32.0),
-                                                                  bottomRight: Radius.circular(32.0)),
+                                                                  bottomLeft: Radius.circular(px32),
+                                                                  bottomRight: Radius.circular(px32)),
                                                             ),
                                                             child: Text(
                                                               "Submit",
@@ -314,7 +308,7 @@ class _InputScreenState extends State<InputScreen> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 8.0, 0, 8),
+                      padding: EdgeInsets.fromLTRB(0, px8, 0, px8),
                       child: VerticalDivider(
                         width: 10,
                         thickness: 2,
@@ -325,12 +319,12 @@ class _InputScreenState extends State<InputScreen> {
                       child: Column(
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 12.0),
-                            child: Text('Expenses', style: TextStyle(fontSize: 20.0)),
+                            padding: EdgeInsets.only(bottom: px12),
+                            child: Text('Expenses', style: TextStyle(fontSize: px20)),
                           ),
                           ExpenseList(_inputs),
                           Padding(
-                            padding: const EdgeInsets.only(top: 16),
+                            padding: EdgeInsets.only(top: px16),
                             child: Ink(
                               decoration: ShapeDecoration(
                                 color: accentColor,
@@ -348,7 +342,7 @@ class _InputScreenState extends State<InputScreen> {
                                             title: Text("New Expense", style: headlineStyle),
                                             contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             shape: RoundedRectangleBorder(
-                                                borderRadius: BorderRadius.all(Radius.circular(32.0))),
+                                                borderRadius: BorderRadius.all(Radius.circular(px32))),
                                             content: StatefulBuilder(
                                               builder: (BuildContext bcontext, StateSetter setDialogState) {
                                                 return Container(
@@ -362,19 +356,17 @@ class _InputScreenState extends State<InputScreen> {
                                                       mainAxisSize: MainAxisSize.min,
                                                       children: <Widget>[
                                                         Padding(
-                                                          padding:
-                                                              const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8),
+                                                          padding: EdgeInsets.fromLTRB(px16, px16, px16, px8),
                                                           child: Row(
                                                             children: <Widget>[
                                                               Padding(
-                                                                padding:
-                                                                    const EdgeInsets.fromLTRB(0, 0, 8, 0),
+                                                                padding: EdgeInsets.fromLTRB(0, 0, px8, 0),
                                                                 child:
                                                                     Text("Name", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
-                                                                  height: 80,
+                                                                  height: px80, // 80px
                                                                   child: Center(
                                                                     child: TextFormField(
                                                                       style: bodyStyleCanvasColor,
@@ -384,11 +376,11 @@ class _InputScreenState extends State<InputScreen> {
                                                                           focusedBorder: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0)),
+                                                                                      px16)),
                                                                           border: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0))),
+                                                                                      px16))),
                                                                       onSaved: (String value) {
                                                                         _name = value;
                                                                       },
@@ -405,19 +397,17 @@ class _InputScreenState extends State<InputScreen> {
                                                           ),
                                                         ),
                                                         Padding(
-                                                          padding:
-                                                              const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8),
+                                                          padding: EdgeInsets.fromLTRB(px16, px8, px16, px8),
                                                           child: Row(
                                                             children: <Widget>[
                                                               Padding(
-                                                                padding:
-                                                                    const EdgeInsets.fromLTRB(0, 20, 0, 8),
+                                                                padding: EdgeInsets.fromLTRB(0, px20, 0, px8),
                                                                 child: Center(
                                                                   child: RaisedButton(
-                                                                    padding: EdgeInsets.all(8),
+                                                                    padding: EdgeInsets.all(px8),
                                                                     shape: RoundedRectangleBorder(
                                                                         borderRadius: BorderRadius.all(
-                                                                            Radius.circular(8.0))),
+                                                                            Radius.circular(px8))),
                                                                     color: accentColor,
                                                                     child: Text(
                                                                       date,
@@ -445,14 +435,13 @@ class _InputScreenState extends State<InputScreen> {
                                                                 ),
                                                               ),
                                                               Padding(
-                                                                padding:
-                                                                    const EdgeInsets.fromLTRB(20, 0, 8, 0),
+                                                                padding: EdgeInsets.fromLTRB(px20, 0, px8, 0),
                                                                 child:
                                                                     Text("Amt.", style: bodyStyleCanvasColor),
                                                               ),
                                                               Expanded(
                                                                 child: Container(
-                                                                  height: 80,
+                                                                  height: px80,
                                                                   child: Center(
                                                                     child: TextFormField(
                                                                       style: bodyStyleCanvasColor,
@@ -464,11 +453,11 @@ class _InputScreenState extends State<InputScreen> {
                                                                           focusedBorder: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0)),
+                                                                                      px16)),
                                                                           border: OutlineInputBorder(
                                                                               borderRadius:
                                                                                   BorderRadius.circular(
-                                                                                      16.0))),
+                                                                                      px16))),
                                                                       onSaved: (String value) {
                                                                         _money = double.parse(value);
                                                                       },
@@ -487,7 +476,7 @@ class _InputScreenState extends State<InputScreen> {
                                                         Expanded(
                                                           child: ListView.builder(
                                                             shrinkWrap: true,
-                                                            padding: EdgeInsets.fromLTRB(0, 8, 8, 12),
+                                                            padding: EdgeInsets.fromLTRB(0, px8, px8, px12),
                                                             scrollDirection: Axis.horizontal,
                                                             itemCount: 8,
                                                             itemBuilder: (BuildContext bContext, int index) {
@@ -499,8 +488,9 @@ class _InputScreenState extends State<InputScreen> {
                                                                 },
                                                                 child: Container(
                                                                   decoration: selected(index),
-                                                                  padding: EdgeInsets.fromLTRB(12, 8, 12, 8),
-                                                                  margin: EdgeInsets.only(left: 8),
+                                                                  padding: EdgeInsets.fromLTRB(
+                                                                      px12, px8, px12, px8),
+                                                                  margin: EdgeInsets.only(left: px8),
                                                                   child: Column(
                                                                     mainAxisAlignment:
                                                                         MainAxisAlignment.center,
@@ -509,8 +499,8 @@ class _InputScreenState extends State<InputScreen> {
                                                                         CrossAxisAlignment.center,
                                                                     children: <Widget>[
                                                                       Ink(
-                                                                        width: 35,
-                                                                        height: 35,
+                                                                        width: px35,
+                                                                        height: px35,
                                                                         decoration: ShapeDecoration(
                                                                           color: accentColor,
                                                                           shape: CircleBorder(),
@@ -541,12 +531,12 @@ class _InputScreenState extends State<InputScreen> {
                                                             }
                                                           },
                                                           child: Container(
-                                                            padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
+                                                            padding: EdgeInsets.only(top: px15, bottom: px15),
                                                             decoration: BoxDecoration(
                                                               color: accentColor,
                                                               borderRadius: BorderRadius.only(
-                                                                  bottomLeft: Radius.circular(32.0),
-                                                                  bottomRight: Radius.circular(32.0)),
+                                                                  bottomLeft: Radius.circular(px32),
+                                                                  bottomRight: Radius.circular(px32)),
                                                             ),
                                                             child: Text(
                                                               "Submit",
@@ -575,11 +565,11 @@ class _InputScreenState extends State<InputScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 20, 0, 8),
+                padding: EdgeInsets.fromLTRB(0, px20, 0, px8),
                 child: Center(
                   child: RaisedButton(
-                    padding: EdgeInsets.all(8),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(8.0))),
+                    padding: EdgeInsets.all(px8),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(px8))),
                     color: accentColor,
                     child: Text(
                       'Update',
